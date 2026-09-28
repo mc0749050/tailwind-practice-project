@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F6F4F5" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main
+      class="lg:h-screen min-h-0 w-screen bg-[#FFFFFF] lg:flex font-mono select-none"
+    >
+      <input type="checkbox" name="menu" id="menu" class="peer hidden" />
+
+      <!-- navbar -->
+      <nav class="w-3/20 bg-[#F6F4F5] hidden lg:block">
+        <!-- side nav bar top section -->
+        <div
+          class="w-full h-1/10 border-b-1 border-gray-300 flex justify-center items-center"
+        >
+          <div class="flex gap-6 items-center">
+            <img
+              class="w-10 h-10 rounded-full border-2 border-black"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-aYnUlfoDhJ6l1PeOZfObJc1fvFXf3yfVikYhr7agg&s=10"
+              alt=""
+            />
+            <p class="font-bold">Whalee loanes</p>
+          </div>
+        </div>
+
+        <!-- side nav bar middle section -->
+        <div class="w-full h-4/5 py-12">
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-regular fa-house text-lg"></i>
+            <p class="mx-4 cursor-pointer underline underline-offset-6">
+              Dashboard
+            </p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-brands fa-usps"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Stake</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-regular fa-window-maximize"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Band</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-calculator"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Calculator</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-wallet"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Wallet</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-brands fa-think-peaks"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Levengers</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Flash Mint</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-file"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Docs</p>
+          </div>
+        </div>
+
+        <!-- side nav bar bottom sewcwtion  -->
+        <div
+          class="w-full h-1/10 border-t-1 border-gray-300 flex justify-between px-10 items-center"
+        >
+          <i class="fa-brands fa-github cursor-pointer"></i>
+          <i class="fa-solid fa-envelope cursor-pointer"></i>
+          <i class="fa-brands fa-twitter cursor-pointer"></i>
+          <i class="fa-brands fa-facebook-f cursor-pointer"></i>
+        </div>
+      </nav>
+
+      <!-- nav bar for mobile viewport -->
+
+      <nav
+        class="flex w-full h-20 bg-[#F6F4F5] lg:hidden justify-between items-center p-4"
+      >
+        <div class="flex gap-6 items-center">
+          <img
+            class="w-10 h-10 rounded-full border-2 border-black"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-aYnUlfoDhJ6l1PeOZfObJc1fvFXf3yfVikYhr7agg&s=10"
+            alt=""
+          />
+          <p class="font-bold">Whalee loanes</p>
+        </div>
+        <div class="">
+          <label for="menu">
+            <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+          </label>
+        </div>
+      </nav>
+
+      <!-- sidebar for mobile view -->
+
+      <div
+        class="lg:hidden w-screen h-screen bg-[#F6F4F5] fixed top-0 z-50 flex justify-center items-center text-lg translate-x-full peer-checked:translate-x-0 transition-transform duration-500"
+      >
+        <label for="menu">
+          <i
+            class="fa-solid fa-xmark absolute text-xl top-12 right-12 cursor-pointer"
+          ></i>
+        </label>
+        <div class="w-auto h-4/5 py-12">
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-regular fa-house text-lg"></i>
+            <p class="mx-4 cursor-pointer underline underline-offset-6">
+              Dashboard
+            </p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-brands fa-usps"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Stake</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-regular fa-window-maximize"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Band</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-calculator"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Calculator</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-wallet"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Wallet</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-brands fa-think-peaks"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Levengers</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Flash Mint</p>
+          </div>
+          <div class="w-full flex px-8 py-4 items-center text-normal">
+            <i class="fa-solid fa-file"></i>
+            <p class="mx-4 text-gray-500 cursor-pointer">Docs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- body -->
+      <section class="flex-1 flex flex-col">
+        <!-- top bar -->
+        <div
+          class="w-full h-1/10 border-b-1 border-gray-300 lg:flex hidden px-12 items-center justify-between"
+        >
+          <p class="text-gray-500 text-sm font-bold">1 HUMP = $8.43</p>
+          <div class="flex gap-8">
+            <button
+              class="px-4 py-2 text-normal bg-gray-900 text-white rounded-md cursor-pointer hover:bg-gray-800"
+            >
+              Connect Wallet
+            </button>
+            <button
+              class="text-normal bg-gray-200 w-12 h-12 rounded-md cursor-pointer hover:bg-gray-800 hover:text-white"
+            >
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- main section -->
+
+        <div class="flex-1 lg:flex">
+          <!-- left -->
+          <div class="lg:h-full w-full lg:w-1/2 p-6 flex flex-col">
+            <div class="w-full p-4 mb-6 h-[15%]">
+              <p class="text-4xl font-bold m-2">Single Stack(3,3)</p>
+              <p class="text-sm text-gray-400 m-2">
+                <i class="fa-regular fa-clock"></i> 7 hour, 9 min to next rebase
+              </p>
+            </div>
+
+            <div
+              class="border-2 border-gray-300 rounded-xl h-[40vh] lg:flex-1 flex flex-col justify-center items-center gap-8"
+            >
+              <i class="fa-solid fa-wallet text-8xl animate-bounce"></i>
+              <button
+                class="border-2 border-gray-900 text-gray-900 rounded-md px-6 py-2 cursor-pointer font-semibold hover:bg-gray-900 hover:text-white"
+              >
+                Connect Wallet
+              </button>
+              <p class="text-sm text-gray-500">
+                Connect your wallet to stake HUMP
+              </p>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="lg:h-full w-full lg:w-1/2 lg:p-12 p-6 flex flex-col">
+            <div
+              class="w-full p-4 mb-6 flex justify-between px-6 items-center h-[15%] bg-gray-900 text-white rounded-xl"
+            >
+              <p class="text-4xl font-bold">
+                <i class="fa-solid fa-piggy-bank"></i> $0.00
+              </p>
+              <p class="text-sm text-gray-200">Your Earnings/Day</p>
+            </div>
+
+            <div
+              class="border-2 border-gray-900 bg-gray-900 rounded-xl flex-1 flex flex-col text-white"
+            >
+              <div
+                class="flex-1 border-b-1 border-gray-700 p-8 min-h-0 box-border"
+              >
+                <div class="flex justify-between items-center text-gray-300">
+                  <p class="">APY</p>
+                  <i class="fa-brands fa-yelp text-lg"></i>
+                </div>
+                <p class="text-2xl font-bold py-2">257,958%</p>
+              </div>
+
+              <div
+                class="flex-1 border-b-1 border-gray-700 p-8 min-h-0 box-border"
+              >
+                <div class="flex justify-between items-center text-gray-300">
+                  <p class="">Total Value Deposited</p>
+                  <i class="fa-solid fa-arrow-trend-up text-lg"></i>
+                </div>
+                <p class="text-2xl font-bold py-2">$527,978</p>
+              </div>
+
+              <div
+                class="flex-1 border-b-1 border-gray-700 p-8 min-h-0 box-border"
+              >
+                <div class="flex justify-between items-center text-gray-300">
+                  <p class="">Current Index</p>
+                  <i class="fa-solid fa-repeat text-lg"></i>
+                </div>
+                <p class="text-2xl font-bold py-2">1.99 HUMP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom section  -->
+        <div
+          class="w-full h-[10vh] lg:h-1/10 border-gray-300 border-t-1 lg:flex justify-between items-center px-8 text-sm text-gray-400"
+        >
+          <p class="text-center my-2">
+            @2022 Wallens Lovale || All rights reserved
+          </p>
+          <div class="flex justify-center items-center gap-6 text-gray-800">
+            <p><i class="fa-solid fa-check"></i> KYC Verified</p>
+            <p><i class="fa-solid fa-check"></i> MNC Vantures</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
